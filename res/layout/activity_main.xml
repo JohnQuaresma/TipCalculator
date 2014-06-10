@@ -51,7 +51,7 @@
         android:id="@+id/tvTipAmountLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnCalc"
+        android:layout_below="@+id/rgTipPct"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
@@ -81,8 +81,7 @@
 	        android:id="@+id/rb15Pct"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="@string/fifteen_percent"
-	        android:checked="true" />
+	        android:text="@string/fifteen_percent" />
 	
 	    <RadioButton
 	        android:id="@+id/rb18Pct"
@@ -98,14 +97,4 @@
 	
     </RadioGroup>
     
-    <Button
-        android:id="@+id/btnCalc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/rgTipPct"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:onClick="calculateTip"
-        android:text="@string/calculate" />
-
 </RelativeLayout>
