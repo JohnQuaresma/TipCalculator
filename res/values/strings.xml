@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalculator</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="check_amount">Check Amount</string>
+    <string name="dollar_sign">$</string>
+    <string name="fifteen_percent">15%</string>
+    <string name="eighteen_percent">18%</string>
+    <string name="twenty_percent">20%</string>
+    <string name="calculate">Calculate</string>
+    <string name="desired_tip">Desired Tip</string>
+    <string name="tip_amount">Tip Amount:</string>
+    <string name="tip_calculator">Tip Calculator</string>
+    <string name="zero_dollars">$0.00</string>
+
+</resources>

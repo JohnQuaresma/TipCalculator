@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/etCheckAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAmoutLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvAmoutLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/check_amount"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvDollarSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etCheckAmount"
+        android:layout_toLeftOf="@+id/etCheckAmount"
+        android:text="@string/dollar_sign"
+        android:textSize="30sp" />
+    
+    <TextView
+        android:id="@+id/tvDesiredTipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCheckAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/desired_tip"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvTipAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalc"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tip_amount" />
+
+    <TextView
+        android:id="@+id/tvTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTipAmountLabel"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="@string/zero_dollars"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp" />
+
+    <RadioGroup
+        android:id="@+id/rgTipPct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvDesiredTipLabel"
+        android:layout_marginTop="10dp">
+    
+	    <RadioButton
+	        android:id="@+id/rb15Pct"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/fifteen_percent"
+	        android:checked="true" />
+	
+	    <RadioButton
+	        android:id="@+id/rb18Pct"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/eighteen_percent" />
+	
+	    <RadioButton
+	        android:id="@+id/rb20Pct"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/twenty_percent" />
+	
+    </RadioGroup>
+    
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgTipPct"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="calculateTip"
+        android:text="@string/calculate" />
+
+</RelativeLayout>
